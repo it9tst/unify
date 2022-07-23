@@ -19,7 +19,10 @@ Linux, Windows and MacOS environments should both work.
 
 There is an android application and you can find the code in [``phonegap-build``](phonegap-build/) directory.
 
-![Gui](/img/screen.png)
+![Screen1](/img/screen1.png)
+![Screen2](/img/screen2.png)
+![Screen3](/img/screen3.png)
+![Screen4](/img/screen4.png)
 
 ### Authors
 [Luca Al Daire](https://github.com/liuk997)

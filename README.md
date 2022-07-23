@@ -9,16 +9,16 @@ Technologies used: Html, Php, Javascript and MySQL.
 
 [Folder](https://github.com/it9tst/unify/tree/main/doc)
 
+### Applications
+
+There is an android application and you can find the code in [``phonegap-build``](phonegap-build/) directory.
+
 ### Demo
 
 ![Screen1](/img/screen1.png)
 ![Screen2](/img/screen2.png)
 ![Screen3](/img/screen3.png)
 ![Screen4](/img/screen4.png)
-
-### Applications
-
-There is an android application and you can find the code in [``phonegap-build``](phonegap-build/) directory.
 
 ### Authors
 [Luca Al Daire](https://github.com/liuk997)

@@ -1,0 +1,106 @@
+body{
+    background-image: url(/images/back_register.png);
+    background-position: bottom right, center;
+    background-repeat: no-repeat, repeat;
+    background-color: #e9ecef;
+    height: 100%;
+}
+
+#first_box_register{
+    padding: 30px 0px;
+}
+
+.logo_register{
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 99px;
+    display: block;
+    margin: auto;
+    background-color: #343a40;
+    -webkit-mask-image: url(/images/logo+scritta.svg);
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: 100%;
+    -webkit-mask-position: 0% 50%;
+}
+
+#logo_hr_register{
+    width: 100%;
+    background-image: linear-gradient(to right, #f0f0f0, #8c8c8c, #f0f0f0);
+    border: 0;
+    height: 1px;
+}
+
+.form_register{
+    height: 100%;
+    color: #343a40;
+    max-width: 600px;
+    margin: auto;
+    padding: 0 10px;
+    width: 95%;
+    margin-bottom: 60px;
+}
+
+.form_register #title_register{
+    font-size: 25px;
+    text-align: center;
+    display: block;
+    margin: 30px 0px;
+    color: #343a40;
+}
+
+.form_register .form-group{
+    margin-bottom: 30px;
+}
+
+.form_register .data_nascita_register{
+    display: flex;
+}
+
+.form_register .data_nascita_register .giorno_register{
+    margin-right: 5%;
+    flex: auto;
+}
+
+.form_register .data_nascita_register .mese_register{
+    margin: 0px 0px;
+    flex: auto;
+}
+
+.form_register .data_nascita_register .anno_register{
+    margin-left: 5%;
+    flex: auto;
+}
+
+.form_register .custom-control-label::before{
+	background-color: #ccc;
+}
+
+.form_register .invalid-feedback{
+	display:block;
+	visibility:hidden;
+}
+
+.form_register .button_registrati{
+    border: 2px solid white;
+    border-radius: 25px;
+    border-color:  #343a40;
+    color: #343a40;
+    font-size: 23px;
+    padding: 7px 15px;
+    background-color: #f8f8f8;
+    margin: auto;
+    display: block;
+}
+
+.form_register .button_registrati:hover{
+    border-color: #343a40;
+    background-color: #343a40;
+    color: #f8f8f8;
+}
+
+@media screen and (max-width: 768px) {
+    body{
+        background-image: none;
+    }
+}

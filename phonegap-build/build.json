@@ -1,0 +1,9 @@
+{
+"ios": {
+	"release": {
+			"developmentTeam": "4ES4B8G7JK",
+			"packageType": "app-store",
+			"provisioningProfile": "3243558f-cc35-425d-a2c2-064889f91347"
+		}
+	}
+}

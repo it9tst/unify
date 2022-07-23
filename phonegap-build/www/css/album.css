@@ -1,0 +1,316 @@
+#album_container{
+    display: flex;
+    width:100%
+}
+
+#album_container .album_column1{
+    margin: 30px 0px 30px 30px;
+    background-color: #fff;
+    padding: 15px;
+    border: 1px solid transparent;
+    border-color: #e2e3e4;
+}
+
+#album_container .album_header{
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+#album_container .album_cover{
+    transition: .5s ease;
+    min-height: 300px;
+    min-width: 300px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: .9;
+    position: relative;
+    cursor: pointer;
+}
+
+#album_container .album_cover:hover {
+    background-size: 110%;
+    opacity: 1;
+    box-shadow: 0 0px 5px 0 rgba(0,0,0,0.1);
+}
+
+#album_container .album_cover:hover .button_play i.fas{
+    display: block;
+}
+
+#album_container .album_info{
+    flex-direction: column;
+    margin-left: 10px;
+    display: inline-grid;
+}
+
+#album_container .album_title{
+    font-size: 35px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#album_container .artista_c_n{
+    font-size: 18px;
+    display: flex;
+    vertical-align: middle;
+    margin-top: 5px;
+}
+
+#album_container .artista_c_n .artista_nome{
+    line-height: 60px;
+    margin-left: 5px;
+    margin-right: 10px;
+}
+
+#album_container .artista_c_n .artista_nome:hover{
+    text-decoration: underline;
+}
+
+#album_container .artista_cover{
+    max-height: 60px;
+    min-width: 60px;
+    background-size: contain;
+    border-radius: 50%;
+    margin-left: 5px;
+}
+
+#album_container .artista_nome_corr{
+    line-height: 60px;
+    margin-left: 5px;
+    margin-right: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+#album_container .artista_nome_corr:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#album_container .brani_list{
+    margin-top: 30px;
+    margin-bottom: 0;
+}
+
+#album_container .album_column2{
+	margin: 30px 0;
+}
+
+#album_container .suggerimenti_list{
+    background-color: #fff;
+    border: 1px solid transparent;
+    border-color: #e2e3e4;
+    margin-bottom: 10px;
+}
+
+#album_container .artisti_correlati{
+    margin: 12px;
+    margin-bottom: -7px!important;
+    font-weight: bold;
+}
+
+#album_container .artista_c_n_s{
+    display: flex;
+    vertical-align: middle;
+    margin: 12px;
+}
+
+#album_container .album_correlati{
+    margin: 12px;
+    margin-bottom: -7px!important;
+    font-weight: bold;
+}
+
+#album_container .album_c_n_s{
+    display: flex;
+    vertical-align: middle;
+    margin-top: 5px;
+}
+
+#album_container .album_genere a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#album_container .album_etichetta{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+#album_container .album_cover_min{
+    min-height: 60px;
+    min-width: 60px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    margin-left: 12px;
+}
+
+#album_container .album_nome_corr{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-top: 20px;
+    margin-bottom: 12px;
+    margin-right: 12px;
+    margin-left: 5px;
+    line-height: 22px;
+}
+
+#album_container .album_nome_corr1{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 15px;
+    color: #555555;
+}
+
+#album_container .album_nome_corr1:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#album_container .album_nome_corr2{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 14px;
+    color: #a1a1a1;
+}
+
+#album_container .album_nome_corr2:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#album_container .brani_list a{
+    color: #343434
+}
+
+#album_container .brani_list a:hover{
+    color: #343434;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#album_container .artista_c_n_box{
+    display: flex;
+    height: 135px;
+    flex-flow: wrap;
+}
+
+.album_cover .button_play{
+    position: absolute;
+    z-index: 20;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.album_cover .button_play i.fas{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 60px;
+    margin-left: -30px;
+    margin-top: -30px;
+    border-radius: 50%;
+    background: #343434a3;
+    color: #fff;
+    cursor: default;
+    display: none;
+}
+
+.album_cover .button_play i.fas:active{
+    color: #ffffffd1;
+}
+
+.artista_c_n a{
+    color: #343434;
+}
+
+.artista_c_n a:hover{
+    color: #343434;
+	cursor:pointer;
+}
+
+@media screen and (max-width: 1300px) {
+	#album_container .album_cover{
+		min-height: 250px;
+		min-width: 250px;
+	}
+	#album_container .album_title{
+		font-size: 28px;
+	}
+	
+	#album_container .artista_c_n .artista_nome{
+		font-size: 16px;
+	}
+}
+
+@media screen and (max-width: 1180px) {
+	#album_container .album_cover{
+		min-height: 200px;
+		min-width: 200px;
+	}
+	#album_container .album_title{
+		font-size: 25px;
+	}
+	
+}
+
+@media screen and (max-width: 1024px) {
+	#album_container > div.col-9, #album_container > div.col-3{
+		-ms-flex: 0 0 100%;
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+	
+	#album_container .album_column2 {
+		    margin-left: 30px;
+	}	
+}
+
+@media screen and (max-width: 900px) {
+	#album_container .brani_list th:nth-child(2), #album_container .brani_list td:nth-child(2){
+		display:none;
+	}
+}
+
+
+@media screen and (max-width: 596px) {
+	#album_container .album_header{
+		display: block;
+	}
+	#album_container .album_cover{
+		max-width: 200px;
+		margin: auto;
+	}
+	#album_container .album_title{
+		text-align: center;
+	}
+
+}
+
+@media screen and (max-width: 530px) {
+	#album_container{
+		margin:0;
+	}
+	
+	
+	#album_container .album_column1{
+		margin: 20px 0px 0px 0px;
+	}
+	
+	#album_container .album_column2{
+		margin: 0px;
+		margin-top: 8px;
+	}
+}

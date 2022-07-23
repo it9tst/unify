@@ -1,0 +1,409 @@
+html{
+	position: relative;
+	top: 0;
+	height: 100%;
+}
+
+body{
+	height: 100%;
+	background-color: #f8f8f8;
+}
+
+/* --- START HOME NAV --- */
+
+#first_box_home .btn_rounded{
+    border: 2px solid white;
+    border-radius: 100px;
+    border-color:  #f1f1f1;
+    color: #f1f1f1;
+    margin: 0px 10px;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 7px 15px;
+    background-color: transparent;
+}
+
+#first_box_home .btn_rounded:hover{
+    border-color: #f1f1f1;
+    background-color: #f1f1f1;
+    color: #232323;
+}
+
+#first_box_home .btn_rounded:last-child{
+    margin-right: 3px;
+}
+
+#first_box_home .button_log_reg{
+    padding-right: 15px;
+}
+
+#first_box_home .logo{
+    background-image: url(/images/logo+scritta.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 65px;
+    display: flex;
+}
+
+#first_box_home .nav_hamb{
+	display: none;
+}
+
+/* --- END HOME NAV --- */
+
+#titolo_home{
+	margin-top: 20%;
+	margin-left: 5%;
+}
+
+#titolo_home h1{
+	font-size: 110px;
+	font-weight: 500;
+}
+
+#titolo_home h3{
+	font-size: 30px;
+	font-weight: 400;
+}
+
+#first_box_home{
+	height: 916px;
+	background-image: url(/images/girlhome2.png), url(/images/backgroundhome3.svg);
+	background-position: right 217px top 124px,right top;
+	background-repeat: no-repeat;
+	background-size: 433px, 1247px;
+	margin-bottom: 50px;
+}
+
+#second_box_home .jumbotron{
+	margin-bottom: 0;
+}
+
+#second_box_home .dispositivi_home{
+	background-image: url(/images/home_ios_android2.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+#second_box_home .ads_app{
+    padding: 4rem 2rem;
+	font-weight: 400;
+}
+
+#second_box_home .ads_app .display-4{
+	font-weight: 400;
+}
+
+#second_box_home .itunes_button{
+	height: 40px;
+	width: 135px;
+	display: inline-block;
+	background-size: cover;
+	background-image: url(/images/downloadAppStore.png);
+	color: transparent;
+	font: 0/0 a;
+	margin-right: 10px;
+}
+
+#second_box_home .googleplay_button{
+	height: 40px;
+	width: 115px;
+	display: inline-block;
+	background-size: cover;
+	background-image: url(/images/downloadGooglePlay.png);
+	color: transparent;
+	font: 0/0 a;
+}
+
+/* --- START FOOTER --- */
+
+footer{
+    background-color: #343a40;
+    color: #f1f1f1;
+    padding: 30px;
+    font-size: 14px;
+}
+
+footer .social i{
+    margin-left: 5%;
+}
+
+/* --- END FOOTER --- */
+
+/* --- START LOGIN --- */
+
+.login_box{
+    display: flex;
+    flex-direction: row;
+}
+
+.login_box .login_box1{
+    width: 100%;
+    background-image: url(/images/login_back.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+}
+
+.login_box .logo_login{
+    background-image: url(/images/logo+scritta.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 65px;
+    display: flex;
+    width: 100%;
+    background-position: center;
+}
+
+.login_box .login_text1{
+    margin: 25px 0px;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.login_box .login_btn_reg{
+    margin-top: 15px;
+    font-size: 20px;
+    color: #329cd1;
+}
+
+.login_box .login_box2{
+    background-color: #fff;
+    padding: 30px;
+    width: 100%;
+    box-shadow: inset 3px 0px 5px 0px rgba(0,0,0,0.2);
+}
+
+.login_box .btn_loginform{
+    display: flex;
+    float: left;
+    border-radius: 25px;
+    color: #fff;
+    background-color: #329cd1;
+}
+
+.login_box .div_col{
+    border-right: 1px solid #ccc;
+}
+
+.login_box .text-muted{
+	visibility:hidden;
+	color:#b91616!important;
+}
+
+.login_box #email_Pass_Help a{
+    margin-top: 3%;
+    width: 100%;
+    float: left;
+	color:#6c757d;
+	-webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+.login_box #login_modal .modal-content{
+	border-radius:0px;
+}
+
+.login_box #login_modal .animatedShake {
+	animation: shake 0.1s;
+	animation-iteration-count: 1;
+}
+
+@keyframes shake {
+  0% { transform: translateX(2px);}
+  10% { transform: translateX(4px);}
+  20% { transform: translateX(6px);}
+  30% { transform: translateX(4px);}
+  40% { transform: translateX(2px);}
+  50% { transform: translateX(-2px);}
+  60% { transform: translateX(-4px);}
+  70% { transform: translateX(-6px);}
+  80% { transform: translateX(-4px);}
+  90% { transform: translateX(-2px);}
+  100% { transform: translateX(0px);}
+}
+
+
+/* --- END LOGIN --- */
+
+@media screen and (max-width: 1500px) {
+	#first_box_home{
+		height: 732px;
+		background-position: right 193px top 92px,right top;
+		background-size: 346px, 997px;
+	}
+
+	#titolo_home h1{
+		font-size: 88px;
+		font-weight: bold;
+	}
+
+	#titolo_home h3{
+		font-size: 24px;
+		font-weight: bold;
+	}
+}
+
+@media screen and (max-width: 1150px) {
+	#first_box_home{
+		height: 549px;
+		background-position: right 154px top 67px,right top;
+		background-size: 259px, 748px;
+	}
+
+	#titolo_home h1{
+		font-size: 66px;
+		font-weight: bold;
+	}
+
+	#titolo_home h3{
+		font-size: 18px;
+		font-weight: bold;
+	}
+}
+
+@media screen and (max-width: 992px) {
+	#login_modal .modal-dialog {
+		max-width: 700px;
+	}
+}
+
+@media screen and (max-width: 940px) {
+	#titolo_home h1 {
+    	font-size: 50px;
+	}
+
+	#titolo_home h3 {
+    	font-size: 15px;
+	}
+
+	.ads_app .display-4 {
+    	font-size: 2.5rem;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.login_box .login_box1{
+		display: none;
+	}
+
+	.login_box .login_box2 {
+	    padding: 15px;
+	    width: 85%;
+	    margin: auto;
+	    box-shadow: none;
+	}
+
+	#login_modal .modal-dialog{
+		margin: auto 10%;
+	}
+
+	#second_box_home .dispositivi_home {
+		display: none;
+	}
+
+	#second_box_home .ads_app{
+		-ms-flex: 0 0 100%;
+		flex: 0 0 100%;
+		max-width: 100%;
+		padding-left: 15px;
+	}
+
+	#second_box_home .jumbotron{
+		padding: 2rem 1rem;
+	}
+
+	.ads_app .display-4 {
+    	font-size: 2.0rem;
+	}
+}
+
+@media screen and (max-width: 576px) {
+	#first_box_home{
+    	background-image: url(/images/backgroundhome3.svg);
+		background-position: right top;
+		background-size: 630px;
+		height: 480px;
+	}
+
+	#first_box_home .logo{
+		width: 150px;
+	}
+
+	#first_box_home .button_log_reg{
+		font-size: 18px;
+	}
+
+	#titolo_home h1 {
+    	font-size: 44px;
+	}
+
+	#titolo_home h3 {
+    	font-size: 13px;
+	}
+
+	#login_modal .modal-dialog{
+		margin: auto 5%;
+	}
+}
+
+@media screen and (max-width: 465px) {
+	#first_box_home .logo {
+	    background-image: url(/images/logo.svg);
+	    height: 90px;
+		width: 90px;
+	}
+}
+
+@media screen and (max-width: 375px) {
+	#first_box_home .logo {
+	    background-image: url(/images/logo.svg);
+	    height: 70px;
+		width: 70px;
+	}
+
+	#first_box_home .btn_rounded{
+		font-size: 12px;
+	}
+
+	#first_box_home .button_log_reg{
+		padding-right: 0px;
+	}
+
+	#titolo_home h1 {
+    	font-size: 40px;
+	}
+
+	#titolo_home h3 {
+    	font-size: 11px;
+	}
+
+	footer .row{
+		font-size: 18px;
+		flex-direction: column;
+		text-align: center;
+	}
+
+	footer .row .col-4{
+		-ms-flex: 0 0 100%;
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+
+	footer .row .col-4 ul{
+		list-style-type: none;
+	    line-height: 30px;
+	    padding-left: 0px;
+	}
+}

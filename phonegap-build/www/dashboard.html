@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html wtx-context="48DED678-C686-4182-85C2-810FB4F16700"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<meta name="viewport" content="minimal-ui, width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Dashboard - Unify</title>
+	<link rel="stylesheet" href="css/fontawesome.css">
+
+	<style>
+		*{
+			font-family: 'Roboto', sans-serif;
+		}
+	</style>
+
+	<script src="js/jquery.min.js" type="text/javascript"></script>
+<script src="js/popper.min.js" type="text/javascript"></script>
+<script src="js/bootstrap.min.js" type="text/javascript"></script>
+<script src="js/dashboard.js" type="text/javascript"></script>
+<script src="js/player.js" type="text/javascript"></script>
+<script src="js/playlist.js" type="text/javascript"></script>
+<script src="js/friend.js" type="text/javascript"></script>
+
+	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" \="">
+<link href="css/dashboard.css" rel="stylesheet" type="text/css" \="">
+<link href="css/myBrani.css" rel="stylesheet" type="text/css" \="">
+<link href="css/artist.css" rel="stylesheet" type="text/css" \="">
+<link href="css/album.css" rel="stylesheet" type="text/css" \="">
+<link href="css/playlist.css" rel="stylesheet" type="text/css" \="">
+</head>
+
+<body cz-shortcut-listen="true">
+<div id="first_box_dash" class="row">
+	<div class="dash_nav_first_column col-auto">
+	<i class="fas fa-bars" id="dash_hamb_mobile"></i>
+	<a href="https://dashboard.unify-unipa.it/" class="logo_dash" target="_self">
+		<div class="logo"></div>
+	</a>
+</div>
+
+<div class="col player_box">
+	<div class="player_content_ext">
+    <div class="player_content" id="player_web">
+        <div class="player_col1">
+            <div id="cover_player" style="background-image: url('../img/defaultAlbum.jpg');"></div>
+        </div>
+        <div class="col-6 player_col2">
+            <div class="player_trackInfo">
+                <span class="artista_title1" id="song_title"> - </span>
+                <span class="artista_title2" id="artist_title"> - </span>
+            </div>
+            <div class="player_controls">
+                <div class="player_progress">
+                    <div class="player_bar">
+        				<div class="player_bar_content" id="player_bar_back">
+        					<div class="progress_bar_back" id="player_bar_progress"></div>
+        					<div class="progress_bar_grip" id="player_bar_grip"></div>
+        				</div>
+        			</div>
+                    <span class="time" id="player_time">00:00</span>
+                </div>
+            </div>
+            <div class="player_command">
+                <div class="player_comm1">
+                    <i class="fas fa-backward clickIcon" id="backward_button"></i>
+                    <i class="fas fa-play clickIcon" style="font-size: 18px" id="play_pause_button"></i>
+                    <i class="fas fa-forward clickIcon" id="forward_button"></i>
+                    <i class="fas fa-random clickIcon" id="random_button"></i>
+                    <i class="fas fa-repeat clickIcon" id="repeat_button"></i>
+                    <i class="fas fa-list-ol clickIcon" id="queue_button"></i>
+                </div>
+                <div class="player_volume">
+                    <i class="fas fa-volume-up" id="volume_icon"></i>
+    				<div class="volume_bar_content" id="volume_bar_back">
+    					<div class="volume_bar_back" id="volume_bar_progress"></div>
+    					<div class="volume_bar_grip" id="volume_bar_grip"></div>
+    				</div>
+    			</div>
+            </div>
+        </div>
+    </div>
+    <div class="player_content2" id="player_queue">
+        <ul class="player_playlist" style="width: calc(50% + 100px)">
+        </ul>
+    </div>
+</div>
+</div>
+
+<div class="col-auto dash_nav_sc row">
+	<div class="form-inline dash_search_container">
+		<i class="far fa-search"></i>
+		<input class="form-control mr-sm-2 dash_search" type="search" placeholder="Cerca" aria-label="Search" wtx-context="B6948CCE-D406-44C7-8231-349237747E83">
+	</div>
+	<i class="fas fa-bell dash_notify" id="dash_notify" data-after="0">
+		<div class="dropdown-menu"></div>
+	</i>
+	<i class="fas fa-user-friends dash_hamb" id="toggleButton"></i>
+</div></div>
+<div id="second_box_dash">
+	<div class="dash_leftbar" id="dash_leftbar">
+		<div class="vertical-menu">
+    <nav class="nav flex-column first_menu">
+        <div class="user_prof">
+            <div class="avatar_user">
+    	        <div class="user_img"></div>
+    	    </div>
+        	<span class="username_dashnav"></span>
+            <i class="fas fa-sign-out-alt icon_user" id="logoutButton"></i>
+            <i class="fas fa-cog left_link icon_user" data-link="account" data-exec="accountSettings"></i>
+        </div>
+        <hr id="user_div_menu">
+        <li class="hidden-nav-xs padder m-t m-b-sm text-xs text-muted first_element">Browse</li>
+        <a class="nav-link left_link" data-link="newMusic">
+            <div class="nav_elem1"><i class="far fa-music"></i></div>
+            <div class="nav_elem2">Nuova musica</div>
+        </a>
+        <a class="nav-link left_link" data-link="suggestion">
+            <div class="nav_elem1"><i class="far fa-headphones"></i></div>
+            <div class="nav_elem2">Suggerimenti</div>
+        </a>
+        <a class="nav-link left_link" data-link="playlists">
+            <div class="nav_elem1"><i class="far fa-list"></i></div>
+            <div class="nav_elem2">Playlist</div>
+        </a>
+        <a class="nav-link left_link" data-link="mood">
+            <div class="nav_elem1"><i class="far fa-images"></i></div>
+            <div class="nav_elem2">Mood</div>
+        </a>
+        <div class="list_genre">
+            <a class="nav-link left_link" id="genre">
+                <div class="nav_elem1"><i class="far fa-compact-disc"></i></div>
+                <div class="nav_elem2">Generi</div>
+            </a>
+            <ul class="list_genre_open">
+								<a class="nav-link left_link" data-link="genre" data-addict="1">Alternative</a>
+								<a class="nav-link left_link" data-link="genre" data-addict="2">Classical</a>
+								<a class="nav-link left_link" data-link="genre" data-addict="3">Dance</a>
+								<a class="nav-link left_link" data-link="genre" data-addict="4">Electronic</a>
+								<a class="nav-link left_link" data-link="genre" data-addict="5">Electronica</a>
+								<a class="nav-link left_link" data-link="genre" data-addict="6">Hip Hop/Rap</a>
+								<a class="nav-link left_link" data-link="genre" data-addict="7">House</a>
+								<a class="nav-link left_link" data-link="genre" data-addict="8">Jazz</a>
+								<a class="nav-link left_link" data-link="genre" data-addict="10">Latin</a>
+								<a class="nav-link left_link" data-link="genre" data-addict="11">Latin Urban</a>
+								<a class="nav-link left_link" data-link="genre" data-addict="13">Pop</a>
+								<a class="nav-link left_link" data-link="genre" data-addict="14">Pop/Rock</a>
+								<a class="nav-link left_link" data-link="genre" data-addict="16">R&amp;B/Soul</a>
+								<a class="nav-link left_link" data-link="genre" data-addict="17">Reggae</a>
+								<a class="nav-link left_link" data-link="genre" data-addict="18">Rock</a>
+								<a class="nav-link left_link" data-link="genre" data-addict="20">Soul</a>
+								<a class="nav-link left_link" data-link="genre" data-addict="22">Trance</a>
+				    		</ul>
+        </div>
+        <a class="nav-link left_link" data-link="rank">
+            <div class="nav_elem1"><i class="far fa-list-ol"></i></div>
+            <div class="nav_elem2">Classifiche</div>
+        </a>
+        <li class="hidden-nav-xs padder m-t m-b-sm text-xs text-muted first_element">Libreria</li>
+        <a class="nav-link left_link" data-link="myRecently">
+            <div class="nav_elem1"><i class="fal fa-calendar-alt"></i></div>
+            <div class="nav_elem2">Ascoltati di recente</div>
+        </a>
+        <a class="nav-link left_link" data-link="myArtist">
+            <div class="nav_elem1"><i class="fal fa-microphone-alt"></i></div>
+            <div class="nav_elem2">Artisti</div>
+        </a>
+        <a class="nav-link left_link" data-link="myAlbum">
+            <div class="nav_elem1"><i class="fal fa-images"></i></div>
+            <div class="nav_elem2">Album</div>
+        </a>
+        <a class="nav-link left_link" data-link="myBrani" data-exec="myBraniPage">
+            <div class="nav_elem1"><i class="fal fa-music"></i></div>
+            <div class="nav_elem2">Brani</div>
+        </a>
+        <div class="list_genre">
+            <a class="nav-link left_link" id="myGenre">
+                <div class="nav_elem1"><i class="fal fa-compact-disc"></i></div>
+                <div class="nav_elem2">Generi</div>
+            </a>
+			<ul class="list_genre_open" id="list_my_genre">
+								<a class="nav-link left_link" data-link="myGenre" data-addict="3">Dance</a>
+								<a class="nav-link left_link" data-link="myGenre" data-addict="13">Pop</a>
+							</ul>
+        </div>
+        <a class="nav-link left_link" data-link="myPlaylists" data-exec="loadPlaylist">
+            <div class="nav_elem1"><i class="fal fa-list"></i></div>
+            <div class="nav_elem2">Playlist</div>
+        </a>
+    </nav>
+    <nav class="nav flex-column" id="playlist_recenti">
+        <li class="hidden-nav-xs padder m-t m-b-sm text-xs text-muted first_element">Playlist recenti</li>
+	</nav>
+</div>
+
+	</div>
+	<div class="dash_center" id="dash_center"></div>
+	<div class="dash_rightbar close_nav" id="dash_rightbar">
+		<div class="vertical-menu friend_nav" id="friend_nav">
+	<input type="text" id="searchFriend" placeholder="Cerca utenti" wtx-context="0EC21998-26F5-4D56-B16F-A7C4675D35D0">
+	<i class="far fa-search"></i>
+	<div id="searchedFriend" style="display:none"><span></span><i class="fas fa-plus-circle"></i></div>
+	<nav class="nav flex-column others" style="display: block;">
+		<li class="hidden-nav-xs padder m-t m-b-sm text-xs text-muted first_element" wfd-id="47">Contatti</li>
+	</nav>
+    <nav class="nav flex-column online" style="display:none">
+        <li class="hidden-nav-xs padder m-t m-b-sm text-xs text-muted first_element" wfd-id="47">Online</li>
+
+    </nav>
+</div>
+
+	</div>
+	<div class="overlay" style="display: none;"><div class="lds-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div>
+</div>
+
+<!-- initially hidden right-click menu -->
+<div class="hide" id="rmenu">
+	<ul>
+		<li></li>
+		<li></li>
+		<li></li>
+	</ul>
+</div>
+
+<script>
+$(document).bind("click", function(event) {
+  document.getElementById("rmenu").className = "hide";
+  document.getElementById("rmenu").style.display = "none";
+});
+</script>
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript">
+var app = {
+    // Application Constructor
+    initialize: function() {
+        this.bindEvents();
+    },
+    // Bind Event Listeners
+    //
+    // Bind any events that are required on startup. Common events are:
+    // 'load', 'deviceready', 'offline', and 'online'.
+    bindEvents: function() {
+        document.addEventListener('deviceready', this.onDeviceReady, false);
+    },
+    // deviceready Event Handler
+    //
+    // The scope of 'this' is the event. In order to call the 'receivedEvent'
+    // function, we must explicitly call 'app.receivedEvent(...);'
+    onDeviceReady: function() {
+        app.receivedEvent('deviceready');
+    },
+    // Update DOM on a Received Event
+    receivedEvent: function(id) {
+        var parentElement = document.getElementById(id);
+        var listeningElement = parentElement.querySelector('.listening');
+        var receivedElement = parentElement.querySelector('.received');
+
+        listeningElement.setAttribute('style', 'display:none;');
+        receivedElement.setAttribute('style', 'display:block;');
+
+        console.log('Received Event: ' + id);
+		
+    }
+};
+
+
+
+
+	app.initialize();
+</script>
+
+</body></html>

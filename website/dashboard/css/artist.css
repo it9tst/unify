@@ -1,0 +1,470 @@
+.artist_page_container{
+    margin: 30px;
+    background-color: #fff;
+    padding: 15px;
+    border: 1px solid transparent;
+    border-color: #e2e3e4;
+}
+
+.artist_page_container .card {
+    overflow: hidden;
+}
+
+.artist_page_container .artist_img {
+    width: 100%;
+    z-index: 1;
+    padding-top: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border-radius: 50%;
+    background-position: center;
+}
+
+.artist_page_container .card_artist{
+    border-radius: 0;
+    transition: 0.3s;
+    max-width: 200px;
+    min-width: 200px;
+    margin: auto !important;
+    background-color: transparent;
+    border: none;
+}
+
+.artist_page_container .card-deck{
+    margin: 0;
+}
+
+.artist_page_container .second_row{
+    height: 45px;
+}
+
+.artist_page_container .artist_name{
+    font-size: 30px;
+    float: left;
+    font-weight: 500;
+}
+
+.artist_page_container .add_library{
+    float: right;
+}
+
+.artist_page_container .artist_genre{
+    float: right;
+}
+
+.artist_page_album{
+    margin: 30px;
+    background-color: #fff;
+    padding: 15px;
+    border: 1px solid transparent;
+    border-color: #e2e3e4;
+}
+
+.artist_page_album_text{
+    font-size: 30px;
+    margin: 0px 35px;
+    position: relative;
+    top: 25px;
+    display: block;
+}
+
+.artist_page_album .card {
+    overflow: hidden;
+}
+
+.artist_page_album .album_img {
+    transition: transform .5s ease;
+    width: 100%;
+    z-index: 1;
+    position: relative;
+}
+
+.artist_page_album .album_img:hover img{
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+.artist_page_album .card_album img {
+    opacity: .9;
+    transform: translate(0,0);
+    transition: transform .3s ease, opacity .5s ease-in-out;
+}
+
+.artist_page_album .card_album .album_container{
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+    background-color: #fff;
+    width:100%;
+    padding: 2px 16px;
+}
+
+.artist_page_album .card_album{
+    border-radius: 0;
+    box-shadow: 0 0px 0px 0 rgba(0,0,0,0);
+    transition: 0.3s;
+    width: 160px;
+    margin: 15px !important;
+    cursor: pointer;
+}
+
+.artist_page_album .album_img:hover .button_play  i.fas{
+    display: block;
+}
+
+.artist_page_album .card-deck{
+    margin: 0;
+    display: inline-flex;
+}
+
+.artist_page_album .music_age{
+    color: #a1a1a1;
+    margin-bottom: 3px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 12px;
+}
+
+.artist_page_album .music_title{
+    color: #606060;
+    margin-top: 3px;
+    margin-bottom: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 14px;
+}
+
+.artist_page_album .card_album:hover {
+    box-shadow: 0 0px 5px 0 rgba(0,0,0,0.1);
+}
+
+.artist_page_album .button_play{
+    position: absolute;
+    z-index: 20;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.artist_page_album .button_play  i.fas{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 60px;
+    margin-left: -30px;
+    margin-top: -30px;
+    border-radius: 50%;
+    background: #343434a3;
+    color: #fff;
+    cursor: default;
+    display: none;
+}
+
+.artist_page_album .button_play  i.fas:active{
+    color: #ffffffd1;
+}
+
+.artist_page_single_popolari .artist_page_box{
+    background-color: #fff;
+    border: 1px solid transparent;
+    border-color: #e2e3e4;
+}
+
+.artist_page_single_popolari{
+    display: flex;
+    margin: 30px;
+}
+
+.artist_page_album_ext{
+    border: 1px solid transparent;
+    border-color: #e2e3e4;
+    background-color: #fff;
+    margin-top: 30px;
+    display: inline-block;
+    padding: 15px;
+}
+
+.artist_page_album_ext .card {
+    overflow: hidden;
+}
+
+.artist_page_album_ext .album_img {
+    transition: transform .5s ease;
+    width: 100%;
+    z-index: 1;
+    position: relative;
+}
+
+.artist_page_album_ext .album_img:hover img{
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+.artist_page_album_ext .card_album img {
+    opacity: .9;
+    transform: translate(0,0);
+    transition: transform .3s ease, opacity .5s ease-in-out;
+}
+
+.artist_page_album_ext .card_album .album_container{
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+    background-color: #fff;
+    width:100%;
+    padding: 2px 16px;
+}
+
+.artist_page_album_ext .card_album{
+    border-radius: 0;
+    box-shadow: 0 0px 0px 0 rgba(0,0,0,0);
+    transition: 0.3s;
+    width: 200px;
+    cursor: pointer;
+}
+
+.artist_page_album_ext .album_img:hover .button_play  i.fas{
+    display: block;
+}
+
+.artist_page_album_ext .card-deck{
+    margin: 0;
+}
+
+.artist_page_album_ext .music_artist{
+    color: #a1a1a1;
+    margin-bottom: 3px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 15px;
+}
+
+.artist_page_album_ext .music_title{
+    color: #606060;
+    margin-top: 3px;
+    margin-bottom: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.artist_page_album_ext .card_album:hover {
+    box-shadow: 0 0px 5px 0 rgba(0,0,0,0.1);
+}
+
+.artist_page_album_ext .button_play{
+    position: absolute;
+    z-index: 20;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.artist_page_album_ext .button_play i.fas{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 60px;
+    margin-left: -30px;
+    margin-top: -30px;
+    border-radius: 50%;
+    background: #343434a3;
+    color: #fff;
+    cursor: default;
+    display: none;
+}
+
+.artist_page_album_ext .button_play i.fas:active{
+    color: #ffffffd1;
+}
+
+.artist_page_single_popolari .popolari_list{
+    border: 1px solid transparent;
+    border-color: #e2e3e4;
+    background-color: #fff;
+    margin-top: 30px;
+}
+
+.artist_page_single_popolari .popolari_list td{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 200px;
+}
+
+.artist_page_single_popolari .artist_page_single_text{
+    margin: 0px 5px;
+    font-size: 30px;
+    position: relative;
+    top: 25px;
+    display: block;
+}
+
+.artist_page_single_popolari .single{
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+.artist_page_single_popolari .artist_page_popolari_text{
+    margin: 0px 5px;
+    font-size: 30px;
+    position: relative;
+    top: 25px;
+    display: block;
+}
+
+.artist_page_album_ext .music_title a{
+    color: #606060;
+}
+
+.artist_page_album_ext .music_title a:hover{
+    color: #606060;
+}
+
+.artist_page_album_ext .music_artist a{
+    color: #a1a1a1;
+}
+
+.artist_page_album_ext .music_artist a:hover{
+    color: #a1a1a1;
+}
+
+.artist_page_album .music_title a{
+    color: #606060;
+}
+
+.artist_page_album .music_title a:hover{
+    color: #606060;
+}
+
+.artist_page_album .music_age a{
+    color: #a1a1a1;
+}
+
+.artist_page_album .music_age a:hover{
+    color: #a1a1a1;
+}
+
+.add_library .btn_rounded{
+    border: 2px solid transparent;
+    border-radius: 100px;
+    color: #f1f1f1;
+    font-weight: 400;
+    background-color: #343434;
+}
+
+.add_library .btn_rounded:hover{
+    border-color: #343434;
+    background-color: #fff;
+    color: #232323;
+}
+
+.artist_page_single_popolari a:hover{
+	text-decoration:underline !important;
+	cursor:pointer;
+}
+
+.artist_page_album a:hover{
+	text-decoration:underline !important;
+	cursor:pointer;
+}
+
+.artist_page_album a:hover{
+	text-decoration:underline !important;
+	cursor:pointer;
+}
+
+@media screen and (max-width: 1300px) {
+	.artist_page_single_popolari .single{
+		display:none;
+	}
+
+	.artist_page_single_popolari .popolari{
+		-ms-flex: 0 0 100%;
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+
+	.artist_page_album{
+		margin: 30px 10px;
+		position: relative;
+	}
+	.artist_page_album .card-deck{
+		-webkit-box-orient: horizontal!important;
+		-webkit-box-direction: normal!important;
+		-webkit-flex-direction: row!important;
+		-ms-flex-direction: row!important;
+		flex-direction: row!important;
+		display: flex;
+		overflow: scroll;
+		-ms-flex-flow: initial;
+		flex-flow: initial;
+	}
+	.artist_page_album .card-deck .card_album{
+		min-width: 150px;
+		max-width: 150px;
+	}
+
+
+
+}
+
+
+@media screen and (max-width: 1024px) {
+	.artist_page_container .card_artist{
+		max-width: 170px;
+		min-width: 170px;
+	}
+	.artist_page_container .second_row{
+		text-align: center;
+		height: 92px;
+	}
+
+	.artist_page_container .artist_name{
+		display: block;
+		float: none;
+	}
+	.artist_page_container .add_library{
+		float: none;
+	}
+	.popolari_list th:nth-child(4), .popolari_list td:nth-child(4){
+		display: none;
+	}
+	.artist_page_single_popolari{
+		margin: 30px 0px;
+	}
+}
+
+
+
+@media screen and (max-width: 596px) {
+	.artist_page_single_popolari .popolari{
+		padding:0;
+	}
+
+	.popolari_list th:nth-child(3), .popolari_list td:nth-child(3){
+		display: none;
+	}
+	.artist_page_container .second_row{
+		height: 114px;
+	}
+	.artist_page_container .artist_name {
+		font-size: 22px;
+	}
+
+	.artist_page_single_popolari, .artist_page_container, .artist_page_album{
+		margin: 23px 8px 0px 8px;
+	}
+
+}
+
+@media screen and (max-width: 396px) {
+	.popolari_list th:nth-child(2), .popolari_list td:nth-child(2){
+		display: none;
+	}
+}

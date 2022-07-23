@@ -1,0 +1,12 @@
+La cartella contiene i file principali della struttura mvc
+Controller è il padre di tutti i controller e possiede i metodi per eseguire azioni standard.
+View è l'oggetto che rappresenta la view, i vari controller modificano quest'ultimo oggetto per mostrare a video le informazioni
+
+Database è l'oggetto che serve ad accedere al database, possiede i metodi select, insert, etc.. per adempire alle principali query sql
+
+mp3 è una semplice libreria d'appoggio utilizzata solo per recuperare la durata dell'mp3 e salvarla nel database
+
+Init è l'oggetto di inizializzazione, tramite un file httaccess modifico il comportamento di apache per reindirizzare qualsiasi
+richiesta al file index.php. Questo in funzione del'url modificherà il suo comportamento.
+
+Il pattern model view controller è stato sviluppato da luca al daire e rivisto dall'intero gruppo

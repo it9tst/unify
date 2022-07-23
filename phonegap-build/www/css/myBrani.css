@@ -1,0 +1,48 @@
+.my_brani_ext{
+    margin: 30px;
+    background-color: #fff;
+    padding: 15px;
+    border: 1px solid transparent;
+    border-color: #e2e3e4;
+}
+
+.myBrani_list{
+    margin-bottom: 0;
+}
+
+.myBrani_list a:hover{
+    text-decoration: underline!important;
+    cursor: pointer;
+}
+
+.checked {
+    color: orange;
+}
+
+.myBrani_list td{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 200px;
+}
+@media screen and (max-width: 1300px) {
+	.myBrani_list th:nth-child(4), .myBrani_list td:nth-child(4){
+		display: none;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+
+	.myBrani_list th:nth-child(3), .myBrani_list td:nth-child(3){
+		display: none;
+	}
+}
+
+@media screen and (max-width: 596px) {
+	.myBrani_list th:nth-child(5), .myBrani_list td:nth-child(5){
+		display: none;
+	}
+	.my_brani_ext{
+		margin: 30px 8px;
+	}
+}

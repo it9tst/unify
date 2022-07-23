@@ -1,0 +1,32 @@
+body{
+    background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+}
+
+.error{
+    margin-left: 0;
+    margin-right: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 8% 0%;
+}
+
+.logo_login{
+    background-image: url(https://unify-unipa.it/images/logo+scritta.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 90px;
+    display: flex;
+    width: 100%;
+    background-position: center;
+}
+
+.not_found{
+    background-image: url(https://unify-unipa.it/images/error.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 250px;
+    display: flex;
+    width: 100%;
+    background-position: center;
+    margin: 3% 0%;
+}

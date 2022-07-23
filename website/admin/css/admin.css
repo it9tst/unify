@@ -1,0 +1,403 @@
+body{
+    background-color: rgb(255, 249, 244)!important;
+}
+
+.logo_start{
+    background-color: #3e3e3e;
+    -webkit-mask-image: url(https://unify-unipa.it/images/logo+scritta.svg);
+    -webkit-mask-size: 390px;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    height: 130px;
+    width: 100%;
+    margin-top: 65px;
+}
+
+.start{
+    background-image: url(https://unify-unipa.it/images/admin.png);
+    background-repeat: no-repeat;
+    height: 600px;
+    background-position: center;
+    background-size: 210px;
+}
+
+/* ----- START LOGIN ----- */
+
+.admin_login{
+    margin-left: 0;
+    margin-right: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 10% 40%;
+}
+
+.admin_login .user{
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.admin_login .pass{
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.admin_login .button{
+    text-align: center;
+}
+
+.admin_login .text{
+    text-align: center;
+    font-size: 20px;
+    font-style: italic;
+    margin-top: 10px;
+    margin-bottom: 60px;
+    cursor: default;
+    -webkit-user-select: none;
+      -moz-user-select: none;
+       -ms-user-select: none;
+           user-select: none;
+}
+
+.admin_login .logo_login{
+    background-image: url(https://unify-unipa.it/images/logo+scritta.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 95px;
+    display: flex;
+    width: 100%;
+    background-position: center;
+}
+
+/* ----- END LOGIN ----- */
+
+/* ----- START INDEX ----- */
+
+/* ----- END INDEX ----- */
+
+/* ----- START NAVBAR ----- */
+
+.admin_navbar a{
+    cursor: pointer;
+}
+
+/* ----- END NAVBAR ----- */
+
+/* ----- START ARTISTI ----- */
+
+.listaArtistiViewAdmin{
+    margin: 5% 10%;
+}
+
+.header_admin_ext{
+    margin-bottom: 30px;
+    display: block;
+    width: 100%;
+}
+
+.header_admin_ext .fa-plus-circle{
+    font-size: 20px;
+    background-color: white;
+    border-radius: 20px;
+    color: rgb(0, 206, 0);
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+.header_admin_ext .fa-plus-circle:active{
+    font-size: 19px;
+}
+
+.text_admin{
+    font-size: 30px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.search_admin{
+    float: right;
+}
+
+.listaArtistiViewAdmin .table_artist_admin{
+    background-color: white;
+    padding: 10px;
+    border: 1px solid transparent;
+    border-color: #e2e3e4;
+}
+
+#artista_row .btn-dark{
+    font-size: 12px;
+}
+
+.ArtistaViewAdmin{
+    margin: 5% 5%;
+}
+
+#add_artista_form{
+    padding: 2% 3%;
+    background: white;
+    border: 1px solid transparent;
+    border-color: #e2e3e4;
+}
+
+.ArtistaViewAdmin .img_art{
+    padding-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.ArtistaViewAdmin .img_art img{
+    border: 1px solid transparent;
+    border-color: #e2e3e4;
+}
+
+.ArtistaViewAdmin .img_art .form-group{
+    margin-top: 15px;
+}
+
+.ArtistaViewAdmin .img_art .form-group .form-control-file{
+    width: auto;
+}
+
+.spaz_row{
+    margin-bottom: 30px;
+}
+
+/* ----- END ARTISTI ----- */
+
+/* ----- START ALBUM ----- */
+
+.listaAlbumViewAdmin{
+    margin: 5% 10%;
+}
+
+.listaAlbumViewAdmin .table_album_admin{
+    background-color: white;
+    padding: 10px;
+    border: 1px solid transparent;
+    border-color: #e2e3e4;
+}
+
+#album_row .btn-dark{
+    font-size: 12px;
+}
+
+.AlbumViewAdmin{
+    margin: 5% 5%;
+}
+
+#add_album_form{
+    padding: 2% 3%;
+    background: white;
+    border: 1px solid transparent;
+    border-color: #e2e3e4;
+}
+
+.AlbumViewAdmin .img_art{
+    padding-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.AlbumViewAdmin .img_art img{
+    border: 1px solid transparent;
+    border-color: #e2e3e4;
+}
+
+.AlbumViewAdmin .img_art .form-group{
+    margin-top: 15px;
+}
+
+.AlbumViewAdmin .img_art .form-group .form-control-file{
+    width: auto;
+}
+
+.AlbumViewAdmin .fa-plus-circle{
+    font-size: 16px;
+    background-color: white;
+    border-radius: 20px;
+    color: rgb(0, 206, 0);
+    cursor: pointer;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+.AlbumViewAdmin .fa-plus-circle:active{
+    font-size: 15px;
+}
+
+/* ----- END ALBUM ----- */
+
+/* ----- START BRANI ----- */
+
+.listaBranoViewAdmin{
+    margin: 5% 10%;
+}
+
+.listaBranoViewAdmin .table_brano_admin{
+    background-color: white;
+    padding: 10px;
+    border: 1px solid transparent;
+    border-color: #e2e3e4;
+}
+
+#brano_row .btn-dark{
+    font-size: 12px;
+}
+
+.BranoViewAdmin{
+    margin: 5% 5%;
+}
+
+#add_brano_form{
+    padding: 2% 3%;
+    background: white;
+    border: 1px solid transparent;
+    border-color: #e2e3e4;
+}
+
+.BranoViewAdmin .img_art{
+    padding-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.BranoViewAdmin .img_art img{
+    border: 1px solid transparent;
+    border-color: #e2e3e4;
+}
+
+.BranoViewAdmin .img_art .form-group{
+    margin-top: 15px;
+}
+
+.BranoViewAdmin .img_art .form-group .form-control-file{
+    width: auto;
+}
+
+.nome_data_art .fa-plus-circle{
+    font-size: 16px;
+    background-color: white;
+    border-radius: 20px;
+    color: rgb(0, 206, 0);
+    cursor: pointer;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+.nome_data_art .fa-plus-circle:active{
+    font-size: 15px;
+}
+
+/* ----- END BRANI ----- */
+
+/* ----- START GENERI ----- */
+
+.listaGenereViewAdmin{
+    margin: 5% 25%;
+}
+
+.listaGenereViewAdmin .table_genere_admin{
+    background-color: white;
+    padding: 10px;
+    border: 1px solid transparent;
+    border-color: #e2e3e4;
+}
+
+#genere_row .btn-dark{
+    font-size: 12px;
+}
+
+/* ----- END GENERI ----- */
+.lds-spinner {
+  color: official;
+  display: inline-block;
+  position: relative;
+  width: 64px;
+  height: 64px;
+  position:absolute;
+  top:calc(50% - 32px);
+  left:calc(50% - 32px);
+}
+.lds-spinner div {
+  transform-origin: 32px 32px;
+  animation: lds-spinner 1.2s linear infinite;
+}
+.lds-spinner div:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 3px;
+  left: 29px;
+  width: 5px;
+  height: 14px;
+  border-radius: 20%;
+  background: #fff;
+}
+.lds-spinner div:nth-child(1) {
+  transform: rotate(0deg);
+  animation-delay: -1.1s;
+}
+.lds-spinner div:nth-child(2) {
+  transform: rotate(30deg);
+  animation-delay: -1s;
+}
+.lds-spinner div:nth-child(3) {
+  transform: rotate(60deg);
+  animation-delay: -0.9s;
+}
+.lds-spinner div:nth-child(4) {
+  transform: rotate(90deg);
+  animation-delay: -0.8s;
+}
+.lds-spinner div:nth-child(5) {
+  transform: rotate(120deg);
+  animation-delay: -0.7s;
+}
+.lds-spinner div:nth-child(6) {
+  transform: rotate(150deg);
+  animation-delay: -0.6s;
+}
+.lds-spinner div:nth-child(7) {
+  transform: rotate(180deg);
+  animation-delay: -0.5s;
+}
+.lds-spinner div:nth-child(8) {
+  transform: rotate(210deg);
+  animation-delay: -0.4s;
+}
+.lds-spinner div:nth-child(9) {
+  transform: rotate(240deg);
+  animation-delay: -0.3s;
+}
+.lds-spinner div:nth-child(10) {
+  transform: rotate(270deg);
+  animation-delay: -0.2s;
+}
+.lds-spinner div:nth-child(11) {
+  transform: rotate(300deg);
+  animation-delay: -0.1s;
+}
+.lds-spinner div:nth-child(12) {
+  transform: rotate(330deg);
+  animation-delay: 0s;
+}
+@keyframes lds-spinner {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.overlay{
+	display:none;
+	background-color: #0000009c;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+	z-index:100;
+}

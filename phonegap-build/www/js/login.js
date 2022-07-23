@@ -1,0 +1,95 @@
+var urlSite="https://unify-unipa.it/";
+
+window.onload=function(){
+	var xhttp = new XMLHttpRequest();
+	xhttp.onreadystatechange = function() {
+		if (this.readyState == 4 && this.status == 200) {
+			var resJson=JSON.parse(this.responseText);
+			aggiornaLogin(resJson);
+		}
+	};
+	xhttp.open("POST", urlSite+"json.php?request=login&type=mobile", true);
+	xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+	xhttp.send("email="+email+"&pass="+password+"&remember="+remember);
+	
+	
+	var modalAccediButton= document.getElementById("modalAccediButton");
+	var modalAccediForm= document.getElementById("modalAccediForm");
+	
+	modalAccediForm.addEventListener('keypress', function(event) {
+		if (event.keyCode == 13) {
+			accediClick();
+		}
+	});
+	modalAccediButton.addEventListener('click', function(event) {
+		accediClick();
+	});
+	
+	function accediClick(){
+		var remember=document.forms[0].remember.checked
+		clearError();
+		var email=document.forms[0].email.value;
+		var password=document.forms[0].password.value;
+		var rememberCheck=document.forms[0].remember.value;
+		if(!checkMail(email)){
+			document.forms[0].email.focus();
+			errorMail();
+		}
+		else if(password==""){
+			document.forms[0].password.focus();
+			errorPass("Inserisci una password.");
+		}
+		else{
+			var xhttp = new XMLHttpRequest();
+			xhttp.onreadystatechange = function() {
+				if (this.readyState == 4 && this.status == 200) {
+					var resJson=JSON.parse(this.responseText);
+					aggiornaLogin(resJson);
+				}
+			};
+			xhttp.open("POST", urlSite+"json.php?request=login&type=mobile", true);
+			xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+			xhttp.send("email="+email+"&pass="+password+"&remember="+remember);
+		}
+	}
+	
+	function checkMail(email){
+		var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+		return re.test(email);
+	}
+	function errorMail(string="Inserisci un indirizzo email valido."){
+		document.getElementById("emailHelp").innerHTML=string;
+		document.getElementById("emailHelp").style.visibility="visible";
+	}
+	function errorPass(string="La password deve avere una lunghezza compresa tra 4 e 60 caratteri."){
+		document.getElementById("passHelp").innerHTML=string;
+		document.getElementById("passHelp").style.visibility="visible";
+	}
+	function clearError(){
+		document.getElementById("emailHelp").style.visibility="hidden";
+		document.getElementById("passHelp").style.visibility="hidden";
+	}
+	function aggiornaLogin(res){
+		console.log(res);
+		if(res.code<0){
+		}
+		switch(res.code){
+			case -2:
+			case -4:
+				errorMail(res.error);
+			break;
+			case -3:
+				errorPass(res.error);
+			break;
+			case 1:
+				if(typeof res.sessid!="undefined" && res.sessid!=null){
+					window.localStorage.setItem("Foto", res.Foto);
+					window.localStorage.setItem("Nickname", res.Nickname);
+					window.location.href="dashboard.html";
+				}
+			break;
+		}
+		
+	}
+	
+}

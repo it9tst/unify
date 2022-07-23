@@ -1,0 +1,14 @@
+RewriteEngine On
+
+RewriteCond %{HTTP_HOST} !^admin\.unify-unipa\.it$ [NC]
+RewriteRule ^(.*)$ https://admin.unify-unipa.it [R=301,L]
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-l
+RewriteCond %{REQUEST_URI} !^/js/
+RewriteCond %{REQUEST_URI} !^/css/
+RewriteCond %{REQUEST_URI} !^/images/
+RewriteCond %{REQUEST_URI} !^/fonts/
+RewriteRule ^(.+)$ index.php?url=$1 [QSA,L]
+

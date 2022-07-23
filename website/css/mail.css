@@ -1,0 +1,39 @@
+body{
+	font-style:"";
+}
+h1{
+	color: red;
+	font-weight:bold;
+	font-size:2em;
+}
+#text{
+	font-size:1.15em;
+}
+a{
+    padding: 10px 20px;
+    border-radius: 4px;
+    background-color: #058C42;
+    color: white;
+    font-size: 1.3em;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 0px 3px #04401C;
+    margin: 45px auto;
+    display: block;
+    width:55%;
+}
+#content{
+	background-color:#F4F4F4;
+	margin:auto;
+	text-align:center;
+	min-width:400px;
+	max-width:550px;
+	overflow-y:auto;
+	min-height:300px;
+}
+img{
+	float:left;
+	margin-left:30px;
+	width:30%;
+	height:auto;
+}
